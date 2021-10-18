@@ -61,7 +61,7 @@ export default function PokemonPage() {
                                 </NavButton>
                                 <PokemonContainer>
                                     <img src={pokemon.image} alt={pokemon.name} />
-                                    <span className="name">{pokemon.name}</span>
+                                    <span className="name">{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</span>
                                     <span className="id">#{id}</span>
                                 </PokemonContainer>
                                 <NavButton>
