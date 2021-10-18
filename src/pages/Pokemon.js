@@ -65,7 +65,7 @@ export default function PokemonPage() {
                                     <span className="id">#{id}</span>
                                 </PokemonContainer>
                                 <NavButton>
-                                    {(id < 893) && (
+                                    {(id < 898) && (
                                         <Link to={`/pokemon/${parseInt(id)+1}`}>
                                             ›
                                         </Link>
@@ -89,7 +89,7 @@ export default function PokemonPage() {
                                     </Card>
                                 </Row>
                                 <Row>
-                                    <Card>
+                                    <Card description>
                                         <div className="title">Description</div>
                                         {pokemon.description}
                                     </Card>
@@ -134,6 +134,8 @@ const Card = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
+    padding: ${props => props.description ? '10px' : '0'};
 
     .title {
         color: #aaa;

@@ -8,6 +8,8 @@ export default styled.input`
     margin-bottom: 11px;
     border: none;
     padding: 14px;
+    border: none;
+    outline: none;
 
     &:first-of-type {
         margin-top: 11px;

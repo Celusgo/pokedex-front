@@ -11,7 +11,7 @@ export default function PokemonButton(props) {
         <Link to={`/pokemon/${id}`} className="pokemon-button">
             <WhiteBox>
                 <img src={imgSrc} alt="Pokemon" width="65%" />
-                <span className="name">{pokemon.name}</span>
+                <span className="name">{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</span>
                 <span className="id">#{pokemon.number}</span>
             </WhiteBox>
         </Link>
